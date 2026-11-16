@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Garage | Trusted Auto Repair</title>
+    <meta
+      name="description"
+      content="Mobile Garage offers fast, trusted vehicle repair, diagnostics, and maintenance services for every driver."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">🚗</span>
+          <span>Mobile Garage</span>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#booking">Book</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-button" href="#booking">Book Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Reliable auto care, right when you need it</p>
+            <h1>Your trusted mobile car service partner</h1>
+            <p class="lead">
+              From quick oil changes to advanced diagnostics and brake repairs, we help keep your
+              vehicle safe, efficient, and road-ready.
+            </p>
+            <div class="cta-row">
+              <a class="primary-btn" href="#services">Our Services</a>
+              <a class="secondary-btn" href="#booking">Book Now</a>
+            </div>
+            <ul class="stats" aria-label="Garage stats">
+              <li><strong>4.9/5</strong><span>Customer rating</span></li>
+              <li><strong>1,200+</strong><span>Cars serviced</span></li>
+              <li><strong>24/7</strong><span>Support</span></li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="card-badge">Quick response</div>
+            <h2>Fast booking</h2>
+            <p>
+              Need service today? Reserve a slot in minutes and our team will reach out to confirm.
+            </p>
+            <div class="mini-list">
+              <span>Oil change</span>
+              <span>Diagnostics</span>
+              <span>Brake service</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow dark">What we do</p>
+            <h2>Complete garage services</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon">⚙️</div>
+              <h3>General Repair</h3>
+              <p>Full vehicle diagnostics and reliable repair work for everyday issues.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">🛢️</div>
+              <h3>Oil Change</h3>
+              <p>Quick oil and filter replacement to keep your engine running smoothly.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">🔧</div>
+              <h3>Engine Service</h3>
+              <p>Engine tune-ups and maintenance to improve performance and efficiency.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">🛑</div>
+              <h3>Brake Service</h3>
+              <p>Brake pad, rotor, and fluid checks for safer driving conditions.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">🗓️</div>
+              <h3>Scheduled Maintenance</h3>
+              <p>Keep your car in top condition with periodic inspections and service.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">📍</div>
+              <h3>Mobile Service</h3>
+              <p>Convenient on-site service that comes directly to your location.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-strip">
+        <div class="container feature-grid">
+          <div>
+            <p class="eyebrow dark">Why choose us</p>
+            <h2>Skilled technicians. Honest service.</h2>
+          </div>
+          <div class="feature-points">
+            <div>
+              <strong>Certified experts</strong>
+              <span>Experienced specialists in diagnostics and repair.</span>
+            </div>
+            <div>
+              <strong>Transparent pricing</strong>
+              <span>No hidden costs, just easy and clear communication.</span>
+            </div>
+            <div>
+              <strong>Fast turnaround</strong>
+              <span>Quick appointments and efficient service completion.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" class="section booking-section">
+        <div class="container booking-wrap">
+          <div class="booking-copy">
+            <p class="eyebrow dark">Book a service</p>
+            <h2>Let us take care of your vehicle</h2>
+            <p>
+              Reserve a visit, tell us about your issue, and we’ll handle the rest. You can also
+              request a mobile visit at your preferred location.
+            </p>
+          </div>
+
+          <form id="bookingForm" class="booking-form">
+            <div class="field-row two-col">
+              <label>
+                <span>Full Name</span>
+                <input type="text" name="name" placeholder="John Doe" required />
+              </label>
+              <label>
+                <span>Phone Number</span>
+                <input type="tel" name="phone" placeholder="+254 7XX XXX XXX" required />
+              </label>
+            </div>
+
+            <div class="field-row two-col">
+              <label>
+                <span>Car Model & Year</span>
+                <input type="text" name="car" placeholder="Toyota Camry 2018" required />
+              </label>
+              <label>
+                <span>Service Needed</span>
+                <input type="text" name="service" placeholder="Oil Change" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span>Preferred Date</span>
+                <input type="date" name="date" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span>Additional Notes</span>
+                <textarea
+                  name="notes"
+                  rows="4"
+                  placeholder="Describe your issue and any vehicle concerns..."
+                ></textarea>
+              </label>
+            </div>
+
+            <button type="submit" class="primary-btn form-submit">Submit Booking</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">🚗</span>
+            <span>Mobile Garage</span>
+          </div>
+          <p>Trusted garage services for cars, SUVs, and commercial vehicles.</p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>+254 700 000 000</li>
+            <li>hello@mobilegarage.com</li>
+            <li>Westlands, Nairobi</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Opening Hours</h3>
+          <ul>
+            <li>Mon - Sat: 8:00 AM - 7:00 PM</li>
+            <li>Sunday: 9:00 AM - 4:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
