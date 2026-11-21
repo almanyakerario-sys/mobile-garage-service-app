@@ -1,0 +1,27 @@
+/* Right-aligned ALMECH content extension */
+:root{direction:ltr}
+@media (min-width:651px){
+  .hero-content{justify-content:flex-end}
+  .hero-copy{text-align:right;margin-left:auto}
+  .hero-actions,.hero-proof{justify-content:flex-end}
+  .hero-side-note{right:24px}
+  .hero-index{right:24px}
+  .eyebrow{justify-content:flex-end}
+  .intro-grid,.section-heading,.faq-layout,.booking-layout{direction:ltr}
+  .intro-grid>div:first-child,.section-heading>div:first-child,.faq-layout>div:first-child,.booking-copy{text-align:right}
+  .intro-copy,.section-note,.faq-layout .section-note,.booking-copy>p:not(.eyebrow){margin-left:auto}
+  .section-heading{justify-content:flex-end;text-align:right}
+  .section-heading>div{margin-left:auto}
+  .service-card{text-align:right}
+  .service-icon{left:24px;right:auto}
+  .step{text-align:right;border-left:1px solid #3a3938;border-right:0}
+  .step+.step{padding-right:28px;padding-left:28px}
+  .step:last-child{border-left:0}
+  .booking-layout{direction:ltr}
+  .booking-copy{text-align:right}
+  .booking-contact{justify-content:flex-end;text-align:right}
+  .faq-layout>div:last-child{text-align:right}
+  .faq-list summary{padding-right:0;padding-left:35px;text-align:right}
+  .faq-list summary::after{right:auto;left:4px}
+  .footer-top{direction:ltr}
+}
