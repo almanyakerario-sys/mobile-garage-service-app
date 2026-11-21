@@ -3,476 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALMECH | Your garage. Wherever you are.</title>
-    <meta
-      name="description"
-      content="ALMECH brings the workshop to you with mobile garage services, diagnostics, maintenance and repairs at your location."
-    />
+    <meta name="theme-color" content="#101010" />
+    <title>ALMECH | Mobile car care, on your terms</title>
+    <meta name="description" content="Book a mobile mechanic with ALMECH. Diagnostics, maintenance and repairs at your home, workplace or roadside location." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-bar">
-        <a href="#top" class="brand" aria-label="ALMECH home">
-          <span class="brand-mark">AL</span>
-          <span>MECH</span>
-        </a>
-
+        <a href="#top" class="brand" aria-label="ALMECH home"><span class="brand-mark">A</span><span>AL<span class="brand-light">MECH</span></span></a>
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="#services">Our services</a>
-          <a href="#how-it-works">How it works</a>
-          <a href="#locations">Locations</a>
-          <a href="#faqs">FAQs</a>
-          <a href="#admin">Admin sign-in</a>
+          <a href="#services">Services</a><a href="#how-it-works">How it works</a><a href="#why-almech">Why ALMECH</a><a href="#faq">FAQs</a>
         </nav>
-
-        <a href="#book" class="btn btn-primary">Book a mechanic</a>
+        <a href="#book" class="btn btn-primary nav-cta">Book a mechanic <span aria-hidden="true">↗</span></a>
       </div>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="container hero-grid">
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
           <div class="hero-copy">
-            <p class="eyebrow">THE WORKSHOP THAT COMES TO YOU</p>
-            <h1>
-              CAR CARE,<br />
-              ON YOUR TERMS
-            </h1>
-            <h2>Your garage. Wherever you are.</h2>
-            <p class="lead">
-              Skip the trip to the workshop. Request a mobile mechanic and get your car cared for
-              at home, at work, or wherever life takes you.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#book" class="btn btn-primary">Find your fix</a>
-              <a href="#services" class="btn btn-secondary">Explore our services</a>
-            </div>
-
-            <div class="hero-mini-stats">
-              <div>
-                <strong>24/7</strong>
-                <span>Support</span>
-              </div>
-              <div>
-                <strong>4.9/5</strong>
-                <span>Rating</span>
-              </div>
-              <div>
-                <strong>1,200+</strong>
-                <span>Cars serviced</span>
-              </div>
-            </div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> MOBILE AUTO CARE · NAIROBI</p>
+            <h1>THE GARAGE<br />COMES <span>TO YOU.</span></h1>
+            <p class="hero-lead">Expert car care without the workshop detour. Book a mechanic to meet you at home, at work, or wherever your car needs help.</p>
+            <div class="hero-actions"><a href="#book" class="btn btn-primary">Book your mechanic <span aria-hidden="true">↗</span></a><a href="#services" class="text-link">Explore services <span aria-hidden="true">↓</span></a></div>
+            <div class="hero-proof"><span class="proof-icon">✳</span><span>Clear quotes before work begins</span><span class="proof-divider"></span><span>Service at your location</span></div>
           </div>
-
-          <div class="hero-panel">
-            <div class="panel-topline">
-              <span class="dot"></span>
-              <span>Available now</span>
-            </div>
-
-            <div class="panel-card">
-              <p class="small-label">Need a quick fix?</p>
-              <h3>Get a mobile mechanic in minutes</h3>
-
-              <div class="check-list">
-                <span>✓ No workshop trip</span>
-                <span>✓ Clear quotes before work</span>
-                <span>✓ Service at your doorstep</span>
-              </div>
-
-              <a href="#book" class="btn btn-primary full-width">Request a mechanic</a>
-            </div>
-          </div>
+          <div class="hero-side-note"><span class="side-line"></span><span>CAR CARE<br />ON YOUR TERMS</span></div>
+          <div class="hero-index"><span>01</span><span class="index-line"></span><span>04</span></div>
         </div>
       </section>
 
-      <section class="feature-band">
-        <div class="container feature-band-inner">
-          <div class="feature-copy">
-            <p class="eyebrow dark">NO WORKSHOP TRIP</p>
-            <h3>Your location. Your schedule.</h3>
+      <section class="ticker" aria-label="ALMECH services"><div class="ticker-track"><span>DIAGNOSTICS</span><b>✳</b><span>MAINTENANCE</span><b>✳</b><span>REPAIRS</span><b>✳</b><span>AT YOUR LOCATION</span><b>✳</b><span>DIAGNOSTICS</span><b>✳</b><span>MAINTENANCE</span><b>✳</b><span>REPAIRS</span><b>✳</b><span>AT YOUR LOCATION</span><b>✳</b></div></section>
+
+      <section class="section intro" id="why-almech"><div class="container intro-grid"><div><p class="eyebrow eyebrow-dark">LESS WAITING. MORE LIVING.</p><h2>YOUR TIME IS<br />BETTER <span>SPENT.</span></h2></div><div class="intro-copy"><p class="intro-large">Skip the garage runaround.</p><p>Tell us what your car needs and where it is. Our team will review your request, confirm availability and share a quote before any work starts.</p><a class="arrow-link" href="#how-it-works">Here’s how it works <span>↗</span></a></div></div></section>
+
+      <section class="section services" id="services"><div class="container"><div class="section-heading"><div><p class="eyebrow eyebrow-dark">READY WHEN YOU ARE</p><h2>WHAT'S GOING ON<br />WITH YOUR CAR?</h2></div><p class="section-note">From warning lights to routine care, tell us what you need and we’ll help plan the next step.</p></div><div class="service-grid">
+        <article class="service-card"><span class="service-number">01 / CHECK</span><span class="service-icon">⌁</span><h3>Diagnostics</h3><p>Warning lights, strange sounds or a car that doesn’t feel right.</p><a href="#book" aria-label="Book vehicle diagnostics">BOOK THIS SERVICE <span>↗</span></a></article>
+        <article class="service-card"><span class="service-number">02 / POWER</span><span class="service-icon">ϟ</span><h3>Battery & starting</h3><p>Battery checks and help when your vehicle won’t start.</p><a href="#book" aria-label="Book battery and starting service">BOOK THIS SERVICE <span>↗</span></a></article>
+        <article class="service-card"><span class="service-number">03 / CARE</span><span class="service-icon">◉</span><h3>Oil & maintenance</h3><p>Regular maintenance to help keep your car running smoothly.</p><a href="#book" aria-label="Book oil and maintenance">BOOK THIS SERVICE <span>↗</span></a></article>
+        <article class="service-card"><span class="service-number">04 / SAFETY</span><span class="service-icon">⊕</span><h3>Brakes & inspection</h3><p>Get braking concerns, unusual noises and safety issues checked.</p><a href="#book" aria-label="Book brakes and inspection">BOOK THIS SERVICE <span>↗</span></a></article>
+        <article class="service-card"><span class="service-number">05 / ROAD</span><span class="service-icon">◌</span><h3>Tyres & punctures</h3><p>Request a tyre check or help with a puncture or spare wheel.</p><a href="#book" aria-label="Book tyre service">BOOK THIS SERVICE <span>↗</span></a></article>
+        <article class="service-card"><span class="service-number">06 / OTHER</span><span class="service-icon">＋</span><h3>Something else?</h3><p>Describe the issue in your booking and we’ll take it from there.</p><a href="#book" aria-label="Request another service">TELL US ABOUT IT <span>↗</span></a></article>
+      </div></div></section>
+
+      <section class="steps-section" id="how-it-works"><div class="container"><div class="section-heading steps-heading"><div><p class="eyebrow">STRAIGHTFORWARD FROM START TO FINISH</p><h2>THREE STEPS.<br /><span>ZERO DETOURS.</span></h2></div><p class="section-note">No guesswork. We’ll confirm the details with you before a mechanic is assigned.</p></div><div class="steps-grid"><article class="step"><span class="step-count">01</span><h3>Tell us what’s up</h3><p>Share your contact, vehicle, service and location details.</p></article><article class="step"><span class="step-count">02</span><h3>We make a plan</h3><p>We’ll get in touch to confirm availability, timing and your quote.</p></article><article class="step"><span class="step-count">03</span><h3>Get back on the road</h3><p>Once you approve the plan, your mechanic meets you at the agreed location.</p></article></div></div></section>
+
+      <section class="booking-section" id="book"><div class="container booking-layout"><div class="booking-copy"><p class="eyebrow">LET'S GET YOU MOVING</p><h2>BOOK YOUR<br />MOBILE <span>MECHANIC.</span></h2><p>Send a request and our team will contact you to confirm the details. Your appointment is not confirmed until we contact you.</p><div class="booking-contact"><span class="contact-mark">↗</span><div><strong>Need help right now?</strong><span>Call or WhatsApp <a href="tel:+254700000000">+254 700 000 000</a></span></div></div></div>
+        <form class="booking-form" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?booking=received" id="bookingForm">
+          <input type="hidden" name="form-name" value="booking" />
+          <p class="hidden-field"><label>Leave this field empty: <input name="bot-field" /></label></p>
+          <div class="form-heading"><span>BOOKING REQUEST</span><span class="required-note">* Required</span></div>
+          <div class="form-grid">
+            <label><span>Your name *</span><input type="text" name="customer_name" autocomplete="name" placeholder="Full name" required maxlength="120" /></label>
+            <label><span>Phone number *</span><input type="tel" name="phone" autocomplete="tel" placeholder="+254 7XX XXX XXX" required maxlength="40" /></label>
+            <label><span>Email address *</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required maxlength="254" /></label>
+            <label><span>Vehicle *</span><input type="text" name="vehicle" placeholder="Make, model and year" required maxlength="150" /></label>
+            <label><span>Service needed *</span><select name="service" required><option value="" disabled selected>Select a service</option><option>Vehicle diagnostics</option><option>Battery & starting</option><option>Oil & maintenance</option><option>Brakes & inspection</option><option>Tyres & punctures</option><option>Other / not sure</option></select></label>
+            <label><span>Preferred date *</span><input type="date" name="preferred_date" required /></label>
+            <label class="form-wide"><span>Where is your vehicle? *</span><input type="text" name="location" id="bookingLocation" autocomplete="street-address" placeholder="Estate, street or landmark" required maxlength="300" /><button type="button" class="location-action" id="useLocation">Use my location</button></label>
+            <label class="form-wide"><span>Tell us a little more</span><textarea name="message" rows="3" maxlength="2000" placeholder="Describe the issue or anything our mechanic should know..."></textarea></label>
           </div>
+          <button type="submit" class="btn btn-primary submit-btn">Send booking request <span>↗</span></button>
+          <p class="privacy-note">Your details are used to respond to this service request. We’ll confirm your appointment directly.</p>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div></section>
 
-          <div class="feature-grid">
-            <div class="feature-item">
-              <strong>Service at your doorstep</strong>
-              <span>We come to you, wherever your car is parked.</span>
-            </div>
-            <div class="feature-item">
-              <strong>Clear quotes before work</strong>
-              <span>Know the issue and the cost before any repairs begin.</span>
-            </div>
-            <div class="feature-item">
-              <strong>A time that works for you</strong>
-              <span>Flexible booking windows around your daily routine.</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section intro-banner">
-        <div class="container intro-layout">
-          <div>
-            <p class="eyebrow dark">THE OPEN ROAD IS CALLING.</p>
-            <h3>GOOD CARE. ANYWHERE.</h3>
-          </div>
-          <div class="intro-stat-block">
-            <h4>One less trip to make.</h4>
-            <p>We bring the workshop to you.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section benefits">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow dark">LESS DOWNTIME. MORE DRIVE TIME.</p>
-            <h2>Good care. Anywhere.</h2>
-          </div>
-
-          <div class="benefit-grid">
-            <div class="benefit-box">
-              <span class="icon">🚗</span>
-              <h3>Service at your doorstep</h3>
-            </div>
-            <div class="benefit-box">
-              <span class="icon">💬</span>
-              <h3>Clear communication</h3>
-            </div>
-            <div class="benefit-box">
-              <span class="icon">⏱️</span>
-              <h3>Flexible scheduling</h3>
-            </div>
-            <div class="benefit-box">
-              <span class="icon">💳</span>
-              <h3>Pay after service</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="section services-section">
-        <div class="container">
-          <div class="section-heading split-heading">
-            <div>
-              <p class="eyebrow dark">A FIX FOR YOUR EVERYDAY</p>
-              <h2>What does your car need?</h2>
-            </div>
-            <p class="section-intro">
-              Explore 24 service options for your vehicle. Availability and workshop needs are
-              confirmed before booking.
-            </p>
-          </div>
-
-          <div class="service-grid">
-            <article class="service-item">
-              <span class="service-index">01</span>
-              <h3>Vehicle diagnostics</h3>
-              <p>Warning light on? Find out what your car is telling you.</p>
-              <a href="#book">Find the problem</a>
-            </article>
-
-            <article class="service-item">
-              <span class="service-index">02</span>
-              <h3>Battery & starting</h3>
-              <p>Battery checks, starting issues and replacement requests.</p>
-              <a href="#book">Get moving again</a>
-            </article>
-
-            <article class="service-item">
-              <span class="service-index">03</span>
-              <h3>Oil & maintenance</h3>
-              <p>Everyday care to keep your engine running smoothly.</p>
-              <a href="#book">Keep it healthy</a>
-            </article>
-
-            <article class="service-item">
-              <span class="service-index">04</span>
-              <h3>Brakes & inspection</h3>
-              <p>Get unusual noises and braking concerns checked.</p>
-              <a href="#book">Drive with confidence</a>
-            </article>
-
-            <article class="service-item">
-              <span class="service-index">05</span>
-              <h3>Tyres & punctures</h3>
-              <p>Request tyre condition checks and help with punctures or a spare wheel.</p>
-              <a href="#book">Check your tyres</a>
-            </article>
-
-            <article class="service-item">
-              <span class="service-index">06</span>
-              <h3>Engine overheating</h3>
-              <p>Request checks for overheating, coolant loss and cooling system issues.</p>
-              <a href="#book">Check the cooling</a>
-            </article>
-
-            <article class="service-item">
-              <span class="service-index">07</span>
-              <h3>Air conditioning</h3>
-              <p>Ask about weak cooling, unusual smells or air conditioning faults.</p>
-              <a href="#book">Keep your cabin comfortable</a>
-            </article>
-
-            <article class="service-item">
-              <span class="service-index">08</span>
-              <h3>Steering & suspension</h3>
-              <p>Get knocking noises, heavy steering or an uneven ride assessed.</p>
-              <a href="#book">Check your ride</a>
-            </article>
-
-            <article class="service-item">
-              <span class="service-index">09</span>
-              <h3>Lights & electrical</h3>
-              <p>Request checks for faulty lights, fuses and other electrical concerns.</p>
-              <a href="#book">Find electrical faults</a>
-            </article>
-          </div>
-
-          <div class="callout-box">
-            <p>
-              Not sure what’s wrong? Tell us what you’re noticing. We’ll start there.
-            </p>
-            <a href="#book" class="btn btn-primary">Describe the issue</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="how-it-works" class="section workflow-section">
-        <div class="container">
-          <div class="section-heading center-heading">
-            <p class="eyebrow dark">LESS HASSLE. MORE LIFE.</p>
-            <h2>Car care without the detour.</h2>
-          </div>
-
-          <div class="workflow-grid">
-            <div class="step-card">
-              <span class="step-number">01</span>
-              <h3>Tell us what’s up</h3>
-              <p>Choose a service, share your vehicle details and tell us where you are.</p>
-            </div>
-
-            <div class="step-card">
-              <span class="step-number">02</span>
-              <h3>Make a plan</h3>
-              <p>We’ll review your request and contact you to confirm availability, timing and a quote.</p>
-            </div>
-
-            <div class="step-card">
-              <span class="step-number">03</span>
-              <h3>Service first, payment after</h3>
-              <p>
-                Once confirmed, a mechanic comes to your location. Agree the work and quote before
-                it starts, then pay after the service is complete.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="locations" class="section location-section">
-        <div class="container location-grid">
-          <div class="location-content">
-            <p class="eyebrow dark">WHERE WE MEET</p>
-            <h2>Your location. Our garage.</h2>
-            <p>
-              Enter the address where your vehicle is parked, or share your current location when
-              requesting a mechanic. Only share your current location if your vehicle is there.
-            </p>
-
-            <div class="location-box">
-              <label for="locationInput">Your service location</label>
-              <div class="location-input-wrap">
-                <input id="locationInput" type="text" placeholder="Add your location" />
-                <button type="button" class="btn btn-primary small-btn">Use my location</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="location-card">
-            <p class="small-label">Almech garage location</p>
-            <h3>Service available across your preferred area</h3>
-            <p>
-              The garage address is awaiting confirmation. Please confirm the address with Almech
-              before travelling. Mobile service availability is confirmed after your request.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section faq-section" id="faqs">
-        <div class="container faq-wrap">
-          <div class="section-heading">
-            <p class="eyebrow dark">GOOD TO KNOW</p>
-            <h2>A few things before we roll.</h2>
-          </div>
-
-          <div class="faq-list">
-            <div class="faq-item active">
-              <button class="faq-question" type="button">
-                Can you come to my location?
-                <span>+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Yes. We offer mobile service at your home, workplace, or any secure location where your vehicle is parked.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                How much does a service cost?
-                <span>+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Costs vary by service and vehicle condition. We provide a clear quote before work starts.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                When do I pay?
-                <span>+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Payment is made after the service is complete and you confirm the work was carried out to your satisfaction.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                Is my booking confirmed immediately?
-                <span>+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Your request is reviewed by our team, and a mechanic is assigned once availability and details are confirmed.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" type="button">
-                What if my car needs a workshop?
-                <span>+</span>
-              </button>
-              <div class="faq-answer">
-                <p>We’ll contact you before recommending a workshop, and only proceed with the best next step for your vehicle.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section admin-section" id="admin">
-        <div class="container admin-wrap">
-          <div class="admin-copy">
-            <p class="eyebrow dark">ALMECH SERVICE DESK</p>
-            <h2>The right help. Sent by the right person.</h2>
-            <ol>
-              <li>Receive the request</li>
-              <li>Confirm the details</li>
-              <li>Assign a mechanic</li>
-            </ol>
-          </div>
-
-          <div class="admin-card">
-            <p class="small-label">Admin sign-in</p>
-            <h3>Sign in to service desk</h3>
-            <form class="admin-form">
-              <label>
-                <span>Email</span>
-                <input type="email" placeholder="admin@almech.com" />
-              </label>
-              <label>
-                <span>Password</span>
-                <input type="password" placeholder="••••••••" />
-              </label>
-              <button type="submit" class="btn btn-primary full-width">Sign in</button>
-            </form>
-            <a class="admin-link" href="#">Forgot password?</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="book" class="section book-section">
-        <div class="container book-panel">
-          <div class="book-copy">
-            <p class="eyebrow dark">BACK TO THE GOOD PART.</p>
-            <h2>Your day doesn’t belong in a waiting room.</h2>
-            <p>Let’s get you moving.</p>
-          </div>
-
-          <form class="booking-form" id="bookingForm">
-            <div class="field-row">
-              <label>
-                <span>Vehicle type</span>
-                <input type="text" name="vehicle" placeholder="Toyota Corolla 2018" required />
-              </label>
-            </div>
-
-            <div class="field-row">
-              <label>
-                <span>Service required</span>
-                <input type="text" name="service" placeholder="Oil & maintenance" required />
-              </label>
-            </div>
-
-            <div class="field-row">
-              <label>
-                <span>Location</span>
-                <input type="text" name="location" placeholder="Westlands, Nairobi" required />
-              </label>
-            </div>
-
-            <div class="field-row">
-              <label>
-                <span>Issue description</span>
-                <textarea name="issue" rows="4" placeholder="Tell us what’s going wrong..." required></textarea>
-              </label>
-            </div>
-
-            <button type="submit" class="btn btn-primary full-width">Request a mechanic</button>
-          </form>
-        </div>
-      </section>
+      <section class="faq-section" id="faq"><div class="container faq-layout"><div><p class="eyebrow eyebrow-dark">GOOD TO KNOW</p><h2>BEFORE WE<br />GET ROLLING.</h2><p class="section-note">Still have a question? Contact our team and we’ll be happy to help.</p></div><div class="faq-list">
+        <details><summary>Is my appointment confirmed when I submit the form?</summary><p>No. This is a booking request. Our team will contact you to confirm availability, timing and the quote.</p></details>
+        <details><summary>Where can the mechanic meet me?</summary><p>Share the location where your vehicle is parked. We’ll confirm whether mobile service is available for that location and repair.</p></details>
+        <details><summary>When will I know the price?</summary><p>We’ll discuss the issue and provide a quote before work begins. No repair should proceed until you approve the plan.</p></details>
+        <details><summary>What if I’m not sure which service to choose?</summary><p>Select “Other / not sure” and describe the symptoms in your request. Our team can help identify the next step.</p></details>
+      </div></div></section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a href="#top" class="brand footer-brand" aria-label="ALMECH homepage">
-            <span class="brand-mark">AL</span>
-            <span>MECH</span>
-          </a>
-          <p>Good care. Anywhere.</p>
-        </div>
-
-        <div>
-          <h3>Quick links</h3>
-          <ul>
-            <li><a href="#services">Our services</a></li>
-            <li><a href="#how-it-works">How it works</a></li>
-            <li><a href="#faqs">FAQs</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Contact</h3>
-          <ul>
-            <li>hello@almech.com</li>
-            <li>+254 700 000 000</li>
-            <li>Nairobi, Kenya</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
+    <footer class="site-footer"><div class="container footer-top"><a href="#top" class="brand footer-brand"><span class="brand-mark">A</span><span>AL<span class="brand-light">MECH</span></span></a><p>MOBILE CAR CARE.<br /><span>WITHOUT THE DETOUR.</span></p><a class="footer-call" href="tel:+254700000000">CALL ALMECH <span>↗</span></a></div><div class="container footer-bottom"><span>© <span id="year"></span> ALMECH. All rights reserved.</span><span>Nairobi, Kenya · Mobile service by request</span></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
