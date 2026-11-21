@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101a2b" />
+    <meta name="description" content="A clean, live weather dashboard powered by Open-Meteo." />
+    <title>Forecast — Weather dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="weather.css" />
+    <script src="weather.js" defer></script>
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="topbar">
+        <a class="wordmark" href="weather.html" aria-label="Forecast home"><span class="brand-symbol">◒</span> forecast<span class="wordmark-dot">.</span></a>
+        <p class="live-label"><span class="live-dot"></span> LIVE WEATHER</p>
+        <div class="unit-control" aria-label="Temperature units">
+          <button type="button" class="unit-button active" data-unit="celsius" aria-pressed="true">°C</button>
+          <button type="button" class="unit-button" data-unit="fahrenheit" aria-pressed="false">°F</button>
+        </div>
+      </header>
+
+      <section class="search-row" aria-label="Search for a city">
+        <form id="searchForm" class="search-form" role="search">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <label class="visually-hidden" for="citySearch">Search a city</label>
+          <input id="citySearch" name="city" type="search" placeholder="Search a city…" autocomplete="off" required />
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <button type="button" class="location-button" id="locationButton"><span aria-hidden="true">◎</span> Use my location</button>
+      </section>
+
+      <p class="status-message" id="statusMessage" role="status" aria-live="polite" hidden></p>
+
+      <section class="current-weather" aria-labelledby="cityName">
+        <div class="current-copy">
+          <p class="eyebrow">RIGHT NOW</p>
+          <h1 id="cityName">Loading weather…</h1>
+          <p class="date-line" id="currentDate"></p>
+          <div class="temperature-line"><span class="weather-emoji" id="currentIcon" aria-hidden="true">⛅</span><strong id="currentTemperature">--°</strong></div>
+          <p class="conditions" id="currentCondition">Getting the latest forecast</p>
+          <p class="feels-like" id="feelsLike">Feels like --°</p>
+        </div>
+        <div class="sun-orbit" aria-hidden="true"><div class="sun-glow"></div><span class="orbit-cloud cloud-one">☁</span><span class="orbit-cloud cloud-two">☁</span><span class="orbit-sun">☀</span></div>
+        <div class="current-meta">
+          <div class="meta-item"><span class="meta-icon">◉</span><div><span class="meta-label">Humidity</span><strong id="humidity">--%</strong></div></div>
+          <div class="meta-item"><span class="meta-icon">↗</span><div><span class="meta-label">Wind</span><strong id="windSpeed">-- km/h</strong></div></div>
+          <div class="meta-item"><span class="meta-icon">☂</span><div><span class="meta-label">Precipitation</span><strong id="precipitation">-- mm</strong></div></div>
+          <div class="meta-item"><span class="meta-icon">◌</span><div><span class="meta-label">UV index</span><strong id="uvIndex">--</strong></div></div>
+        </div>
+      </section>
+
+      <section class="forecast-section hourly-section" aria-labelledby="hourlyTitle">
+        <div class="section-title"><div><p class="eyebrow">PLAN YOUR DAY</p><h2 id="hourlyTitle">Today, by the hour</h2></div><span class="section-caption" id="timezoneLabel">Local time</span></div>
+        <div class="hourly-list" id="hourlyForecast" aria-live="polite"><div class="skeleton">Loading hourly forecast…</div></div>
+      </section>
+
+      <section class="forecast-section daily-section" aria-labelledby="dailyTitle">
+        <div class="section-title"><div><p class="eyebrow">THE WEEK AHEAD</p><h2 id="dailyTitle">5-day forecast</h2></div><span class="section-caption">High / low</span></div>
+        <div class="daily-list" id="dailyForecast" aria-live="polite"><div class="skeleton">Loading daily forecast…</div></div>
+      </section>
+
+      <footer class="footer"><span>Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a></span><span id="updatedAt">Updates when you search</span></footer>
+    </main>
+  </body>
+</html>
